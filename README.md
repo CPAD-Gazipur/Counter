@@ -1,4 +1,4 @@
-# sound
+# Tazbi Counter
 
 A new Flutter project.
 
