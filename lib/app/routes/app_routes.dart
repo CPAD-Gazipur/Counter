@@ -3,10 +3,12 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   Routes._();
+  static const SURALIST = _Paths.SURALIST;
   static const HOME = _Paths.HOME;
 }
 
 abstract class _Paths {
   _Paths._();
+  static const SURALIST = '/suralist';
   static const HOME = '/home';
 }

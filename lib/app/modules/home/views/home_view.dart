@@ -1,6 +1,9 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sound/app/modules/home/views/sura_list_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -12,10 +15,65 @@ class HomeView extends GetView<HomeController> {
         title: Text('HomeView'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            Obx(
+              () => Text(
+                controller.count.value.toString(),
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      controller.increment();
+                    },
+                    child: Text(
+                      "+",
+                    ),
+                  ),
+                  SizedBox(
+                    width: 25,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      controller.decrement();
+                    },
+                    child: Text(
+                      "-",
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 25,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                controller.reset();
+              },
+              child: Text("Reset"),
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Get.to(SuraListView());
+                },
+                child: Text("kk")),
+            Container(
+              height: 200,
+              width: 200,
+              child: Text("ll"),
+            ),
+          ],
         ),
       ),
     );
