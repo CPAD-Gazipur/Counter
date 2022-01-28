@@ -63,15 +63,16 @@ class HomeView extends GetView<HomeController> {
               },
               child: Text("Reset"),
             ),
+            SizedBox(
+              height: 50,
+            ),
             ElevatedButton(
-                onPressed: () {
-                  Get.to(SuraListView());
-                },
-                child: Text("kk")),
-            Container(
-              height: 200,
-              width: 200,
-              child: Text("ll"),
+              onPressed: () {
+                Get.to(SuraListView());
+              },
+              child: Text(
+                "List of Suras",
+              ),
             ),
           ],
         ),
