@@ -1,4 +1,4 @@
-# Tazbi Counter
+# Tazbi Counter(By Yeaseen Ahmed)
 
 A new Flutter project.
 
