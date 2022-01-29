@@ -11,7 +11,7 @@ class SuraListView extends GetView {
       backgroundColor: Color(0xff240046),
       appBar: AppBar(
         title: Text(
-          'List of Suras',
+          'List of Duas',
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
@@ -30,34 +30,54 @@ class SuraListView extends GetView {
                   onTap: () {
                     Get.toNamed(Routes.HOME, arguments: i);
                   },
-                  child: Container(
-                    height: 60,
-                    child: Center(
-                      child: Text(
-                        'Sura $i',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 30,
+                  child: SingleChildScrollView(
+                    child: Container(
+                      height: 180,
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Text(
+                                'Dua $i',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                HomeController.suras[i % 20],
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  // fontSize: 15,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                    decoration: BoxDecoration(
-                      gradient: SweepGradient(
-                        center: FractionalOffset.topRight,
-                        startAngle: 2,
-                        endAngle: 5,
-                        colors: const <Color>[
-                          Color(0xff240046),
-                          Color(0xff97dffc),
-                        ],
-                        stops: const <double>[0.0, 0.5],
+                      decoration: BoxDecoration(
+                        gradient: SweepGradient(
+                          center: FractionalOffset.topRight,
+                          startAngle: 2,
+                          endAngle: 5,
+                          colors: const <Color>[
+                            Color(0xff240046),
+                            Color(0xff97dffc),
+                          ],
+                          stops: const <double>[0.0, 0.5],
+                        ),
+                        color: Colors.white,
+                        border: Border.all(
+                          color: HomeController.colors[i % 14],
+                          width: 5,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                      color: Colors.white,
-                      border: Border.all(
-                        color: HomeController.colors[i % 14],
-                        width: 5,
-                      ),
-                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),
