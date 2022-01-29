@@ -138,7 +138,7 @@ class HomeView extends GetView<HomeController> {
                 Get.to(SuraListView());
               },
               child: Text(
-                "List of Suras",
+                "List of Duas",
               ),
             ),
           ],
