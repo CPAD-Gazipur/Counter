@@ -8,8 +8,16 @@ class SuraListView extends GetView {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff240046),
       appBar: AppBar(
-        title: Text('SuraListView'),
+        title: Text(
+          'List of Suras',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 30,
+          ),
+        ),
+        backgroundColor: Color(0xff240046),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -25,7 +33,13 @@ class SuraListView extends GetView {
                   child: Container(
                     height: 60,
                     child: Center(
-                      child: Text('Sura $i'),
+                      child: Text(
+                        'Sura $i',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 30,
+                        ),
+                      ),
                     ),
                     decoration: BoxDecoration(
                       gradient: SweepGradient(
@@ -33,8 +47,8 @@ class SuraListView extends GetView {
                         startAngle: 2,
                         endAngle: 5,
                         colors: const <Color>[
-                          Colors.greenAccent, // blue
-                          Colors.white,
+                          Color(0xff240046),
+                          Color(0xff97dffc),
                         ],
                         stops: const <double>[0.0, 0.5],
                       ),
