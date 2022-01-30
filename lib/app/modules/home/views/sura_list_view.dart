@@ -4,7 +4,13 @@ import 'package:get/get.dart';
 import 'package:sound/app/modules/home/controllers/home_controller.dart';
 import 'package:sound/app/routes/app_pages.dart';
 
-class SuraListView extends GetView {
+//
+//
+//
+class SuraListView extends GetView<HomeController> {
+  //
+  //
+  //
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,9 +33,16 @@ class SuraListView extends GetView {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
+                  //
+                  //
+                  //
                   onTap: () {
-                    Get.toNamed(Routes.HOME, arguments: i);
+                    controller.selected.value = i;
+                    Get.back();
                   },
+                  //
+                  //
+                  //
                   child: SingleChildScrollView(
                     child: Container(
                       height: 180,
@@ -50,7 +63,7 @@ class SuraListView extends GetView {
                                 height: 8,
                               ),
                               Text(
-                                HomeController.suras[i % 20],
+                                HomeController.duaList[i % 20],
                                 style: TextStyle(
                                   color: Colors.white,
                                   // fontSize: 15,

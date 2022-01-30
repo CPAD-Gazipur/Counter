@@ -3,6 +3,19 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   final count = 0.obs;
+  //
+  //
+  //
+  final suras = [].obs;
+  final selected = 0.obs;
+  @override
+  void onInit() {
+    print(onInit);
+    suras.value = duaList;
+  }
+  //
+  //
+  //
 
   void increment() {
     count.value++;
@@ -32,7 +45,7 @@ class HomeController extends GetxController {
     Colors.redAccent,
     Colors.orangeAccent,
   ];
-  static const List<String> suras = [
+  static const List<String> duaList = [
     "اَللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا , وَ رِزْقًا طَيَّبًا , وَ عَمَلاً مُتَقَبَّلاً (Allahumma inni as’aluka ‘Ilman naafi’an, wa rizqan tayyiban, wa ‘amalan mutaqabbalan)",
     "اللَّهُمَّ اِنِّىْ اَسْئَلُكَ حُبَّكَ وَ حُبَّ مَنْ يُّحِبُّكَ وحُبَّ عَمَلٍ يُّقَرِّبُ اِلى حُبِّكَ(Allahumma inni as aluka hubbaka, wa hubba man yuhibbuka, wa hubba kulle ‘amalin yuqarribuni ila hubbika.)",
     "اللهم إنك عفو تحب العفو فاعفو عنى(Allahumma innaka `afuwwun, tuhibbul-`afwa, fa`fu `anni)",

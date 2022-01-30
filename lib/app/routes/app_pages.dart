@@ -20,7 +20,7 @@ class AppPages {
     GetPage(
       name: _Paths.SURALIST,
       page: () => SuraListView(),
-      // binding: HomeBinding(),
+      binding: HomeBinding(),
     ),
   ];
 }
