@@ -3,9 +3,7 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   final count = 0.obs;
-  //
-  //
-  //
+
   final suras = [].obs;
   final selected = 0.obs;
   @override
@@ -13,9 +11,6 @@ class HomeController extends GetxController {
     print(onInit);
     suras.value = duaList;
   }
-  //
-  //
-  //
 
   void increment() {
     count.value++;

@@ -33,11 +33,16 @@ class HomeView extends GetView<HomeController> {
               //Selected sura container
               SingleChildScrollView(
                 child: Container(
+                  padding: EdgeInsets.only(
+                    left: 20,
+                    right: 20,
+                    top: 20,
+                    bottom: 20,
+                  ),
                   decoration: BoxDecoration(
                     border: Border.all(color: Color(0xFF7709DD), width: 5),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  height: 300,
                   width: double.infinity,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

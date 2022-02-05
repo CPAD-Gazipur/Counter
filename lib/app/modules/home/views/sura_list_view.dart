@@ -4,13 +4,7 @@ import 'package:get/get.dart';
 import 'package:sound/app/modules/home/controllers/home_controller.dart';
 import 'package:sound/app/routes/app_pages.dart';
 
-//
-//
-//
 class SuraListView extends GetView<HomeController> {
-  //
-  //
-  //
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,7 +74,7 @@ class SuraListView extends GetView<HomeController> {
                           endAngle: 5,
                           colors: const <Color>[
                             Color(0xff240046),
-                            Color(0xff97dffc),
+                            Color(0xff822faf),
                           ],
                           stops: const <double>[0.0, 0.5],
                         ),
