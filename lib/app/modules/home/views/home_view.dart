@@ -106,15 +106,15 @@ class HomeView extends GetView<HomeController> {
                           child: Text("Reset"),
                         ),
                         SizedBox(
-                          width: 80,
+                          width: 10,
                         ),
 
                         //
                         //Changable Text Container
 
                         Container(
-                          height: 100,
-                          width: 200,
+                          height: 110,
+                          width: 100,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
@@ -143,7 +143,7 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
                         SizedBox(
-                          width: 80,
+                          width: 20,
                         ),
 
                         //

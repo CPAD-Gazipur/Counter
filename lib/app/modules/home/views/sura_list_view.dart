@@ -39,7 +39,7 @@ class SuraListView extends GetView<HomeController> {
                   //
                   child: SingleChildScrollView(
                     child: Container(
-                      height: 180,
+                      // height: 180,
                       child: Center(
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
