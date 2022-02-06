@@ -12,7 +12,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff240046),
+      backgroundColor: Color(0xff143601),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: SingleChildScrollView(
@@ -40,7 +40,10 @@ class HomeView extends GetView<HomeController> {
                     bottom: 20,
                   ),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Color(0xFF7709DD), width: 5),
+                    border: Border.all(
+                      color: Color(0xFFedf2f4),
+                      width: 5,
+                    ),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   width: double.infinity,
@@ -91,22 +94,51 @@ class HomeView extends GetView<HomeController> {
                         //
                         //Reset Button
 
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            primary: Color(0xff2d00f7),
-                            padding: EdgeInsets.all(25),
-                            side: BorderSide(
-                              color: Colors.black,
-                              width: 5,
+                        Column(
+                          children: [
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                primary: Color(0xffd00000),
+                                padding: EdgeInsets.all(15),
+                                side: BorderSide(
+                                  color: Colors.black,
+                                  width: 5,
+                                ),
+                              ),
+                              onPressed: () {
+                                controller.reset();
+                              },
+                              child: Text("Reset"),
                             ),
-                          ),
-                          onPressed: () {
-                            controller.reset();
-                          },
-                          child: Text("Reset"),
+                            SizedBox(
+                              height: 10,
+                            ),
+
+                            //
+                            //(-) Button
+
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                elevation: 20,
+                                shadowColor: Color(0xff00043a),
+                                primary: Color(0xFF007f5f),
+                                padding: EdgeInsets.all(10),
+                                side: BorderSide(
+                                  color: Color(0xFF000000),
+                                  width: 5,
+                                ),
+                              ),
+                              onPressed: () {
+                                controller.decrement();
+                              },
+                              child: Text(
+                                "-",
+                              ),
+                            ),
+                          ],
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 9,
                         ),
 
                         //
@@ -114,11 +146,11 @@ class HomeView extends GetView<HomeController> {
 
                         Container(
                           height: 110,
-                          width: 100,
+                          // width: 230,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: Color(0xFFA450E4),
+                              color: Color(0xFFedf2f4),
                               width: 5,
                             ),
                           ),
@@ -127,9 +159,8 @@ class HomeView extends GetView<HomeController> {
                               () => AnimatedFlipCounter(
                                 value: controller.count.value,
                                 textStyle: TextStyle(
-                                  fontSize: 80,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 8,
+                                  fontSize: 60,
+                                  letterSpacing: 0.3,
                                   color: HomeController
                                       .colors[controller.count.bitLength],
                                   shadows: [
@@ -147,77 +178,44 @@ class HomeView extends GetView<HomeController> {
                         ),
 
                         //
-                        //(+)&(-) Column
+                        //(+) Button
 
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            //
-                            //(+) Button
-
-                            ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                elevation: 20,
-                                shadowColor: Color(0xff00043a),
-                                primary: Color(0xFF2d00f7),
-                                padding: EdgeInsets.all(25),
-                                side: BorderSide(
-                                  color: Color(0xFF000000),
-                                  width: 5,
-                                ),
-                              ),
-                              onPressed: () {
-                                controller.increment();
-                              },
-                              child: Text(
-                                "+",
-                              ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            elevation: 20,
+                            shadowColor: Color(0xff00043a),
+                            primary: Color(0xFFff9100),
+                            padding: EdgeInsets.all(15),
+                            side: BorderSide(
+                              color: Color(0xFF030000),
+                              width: 5,
                             ),
-                            SizedBox(
-                              height: 25,
-                            ),
-
-                            //
-                            //(-) Button
-
-                            ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                elevation: 20,
-                                shadowColor: Color(0xff00043a),
-                                primary: Color(0xFF2d00f7),
-                                padding: EdgeInsets.all(25),
-                                side: BorderSide(
-                                  color: Color(0xFF000000),
-                                  width: 5,
-                                ),
-                              ),
-                              onPressed: () {
-                                controller.decrement();
-                              },
-                              child: Text(
-                                "-",
-                              ),
-                            ),
-                          ],
+                          ),
+                          onPressed: () {
+                            controller.increment();
+                          },
+                          child: Text(
+                            "+",
+                          ),
+                        ),
+                        SizedBox(
+                          height: 25,
                         ),
                       ],
                     ),
                   ),
                 ],
               ),
-              SizedBox(
-                height: 30,
-              ),
 
               SizedBox(
-                height: 180,
+                height: 100,
               ),
 
               //Dua List Button
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color(0xffe94900),
-                  padding: EdgeInsets.all(25),
+                  primary: Color(0xff6f4518),
+                  padding: EdgeInsets.all(15),
                   side: BorderSide(
                     color: Colors.black,
                     width: 5,

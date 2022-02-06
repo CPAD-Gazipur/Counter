@@ -8,7 +8,7 @@ class SuraListView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff240046),
+      backgroundColor: Color(0xff143601),
       appBar: AppBar(
         title: Text(
           'List of Duas',
@@ -17,7 +17,7 @@ class SuraListView extends GetView<HomeController> {
             fontSize: 30,
           ),
         ),
-        backgroundColor: Color(0xff240046),
+        backgroundColor: Color(0xff143601),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -27,19 +27,12 @@ class SuraListView extends GetView<HomeController> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
-                  //
-                  //
-                  //
                   onTap: () {
                     controller.selected.value = i;
                     Get.back();
                   },
-                  //
-                  //
-                  //
                   child: SingleChildScrollView(
                     child: Container(
-                      // height: 180,
                       child: Center(
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -73,8 +66,8 @@ class SuraListView extends GetView<HomeController> {
                           startAngle: 2,
                           endAngle: 5,
                           colors: const <Color>[
-                            Color(0xff240046),
-                            Color(0xff822faf),
+                            Color(0xffff8500),
+                            Color(0xff538d22),
                           ],
                           stops: const <double>[0.0, 0.5],
                         ),

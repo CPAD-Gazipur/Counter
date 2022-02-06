@@ -41,7 +41,7 @@ class HomeController extends GetxController {
     Colors.orangeAccent,
   ];
   static const List<String> duaList = [
-    "اَللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا , وَ رِزْقًا طَيَّبًا , وَ عَمَلاً مُتَقَبَّلاً (Allahumma inni as’aluka ‘Ilman naafi’an, wa rizqan tayyiban, wa ‘amalan mutaqabbalan)",
+    "اَللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا , وَ رِزْقًا طَيَّبًا , وَ عَمَلاً مُتَقَبَّلاً(Allahumma inni as’aluka ‘Ilman naafi’an, wa rizqan tayyiban, wa ‘amalan mutaqabbalan)",
     "اللَّهُمَّ اِنِّىْ اَسْئَلُكَ حُبَّكَ وَ حُبَّ مَنْ يُّحِبُّكَ وحُبَّ عَمَلٍ يُّقَرِّبُ اِلى حُبِّكَ(Allahumma inni as aluka hubbaka, wa hubba man yuhibbuka, wa hubba kulle ‘amalin yuqarribuni ila hubbika.)",
     "اللهم إنك عفو تحب العفو فاعفو عنى(Allahumma innaka `afuwwun, tuhibbul-`afwa, fa`fu `anni)",
     "رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ العَلِيمُ(Rabbana taqabbal minna innaka antas Sameeaul Aleem)",
