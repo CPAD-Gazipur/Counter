@@ -26,11 +26,10 @@ class HomeController extends GetxController {
 
   static const List<Color> colors = [
     Colors.red,
-    Colors.yellowAccent,
-    Colors.amberAccent,
-    Colors.orange,
     Colors.green,
-    Colors.yellow,
+    Colors.blue,
+    Colors.green,
+    Colors.purple,
     Colors.deepOrange,
     Colors.grey,
     Colors.indigoAccent,

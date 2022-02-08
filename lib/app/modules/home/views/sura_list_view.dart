@@ -8,24 +8,24 @@ class SuraListView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff143601),
+      backgroundColor: Color(0xfffdfffc),
       appBar: AppBar(
         title: Text(
           'List of Duas',
           style: TextStyle(
-            color: Colors.white,
+            color: Color(0xff007200),
             fontSize: 30,
           ),
         ),
-        backgroundColor: Color(0xff143601),
+        backgroundColor: Color(0xfffdfffc),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            for (int i = 1; i <= 20; i++)
+            for (int i = 0; i <= 19; i++)
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10.0),
                 child: GestureDetector(
                   onTap: () {
                     controller.selected.value = i;
@@ -33,6 +33,7 @@ class SuraListView extends GetView<HomeController> {
                   },
                   child: SingleChildScrollView(
                     child: Container(
+                      width: double.infinity,
                       child: Center(
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -66,14 +67,14 @@ class SuraListView extends GetView<HomeController> {
                           startAngle: 2,
                           endAngle: 5,
                           colors: const <Color>[
-                            Color(0xffff8500),
-                            Color(0xff538d22),
+                            Color(0xff38b000),
+                            Color(0xff006400),
                           ],
                           stops: const <double>[0.0, 0.5],
                         ),
                         color: Colors.white,
                         border: Border.all(
-                          color: HomeController.colors[i % 14],
+                          color: HomeController.colors[i % 13],
                           width: 5,
                         ),
                         borderRadius: BorderRadius.circular(10),
