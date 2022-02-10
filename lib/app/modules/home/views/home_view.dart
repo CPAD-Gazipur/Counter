@@ -32,9 +32,9 @@ class HomeView extends GetView {
                         Get.toNamed(Routes.COUNTER);
                       },
                       child: Text(
-                        "Counter",
+                        "Electric Tozbi",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 15,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -51,11 +51,13 @@ class HomeView extends GetView {
                       ),
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(Routes.ALLAHNAME);
+                      },
                       child: Text(
-                        "Page 2",
+                        "Allah's 99 names",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 11.5,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(

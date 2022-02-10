@@ -6,6 +6,7 @@ abstract class Routes {
   static const SURALIST = _Paths.SURALIST;
   static const HOME = _Paths.HOME;
   static const COUNTER = _Paths.COUNTER;
+  static const ALLAHNAME = _Paths.ALLAHNAME;
 }
 
 abstract class _Paths {
@@ -13,4 +14,5 @@ abstract class _Paths {
   static const SURALIST = '/suralist';
   static const HOME = '/home';
   static const COUNTER = '/counter';
+  static const ALLAHNAME = '/allahname';
 }

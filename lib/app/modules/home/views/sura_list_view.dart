@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sound/app/modules/home/controllers/home_controller.dart';
-import 'package:sound/app/routes/app_pages.dart';
 
 class SuraListView extends GetView<HomeController> {
   @override
@@ -23,7 +22,15 @@ class SuraListView extends GetView<HomeController> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            //
+            //
+            //
+            //
             for (int i = 0; i <= 19; i++)
+              //
+              //
+              //
+              //
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: GestureDetector(
@@ -40,7 +47,7 @@ class SuraListView extends GetView<HomeController> {
                           child: Column(
                             children: [
                               Text(
-                                'Dua $i',
+                                'Dua ${i + 1}',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,

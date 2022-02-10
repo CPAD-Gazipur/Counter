@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:sound/app/modules/home/views/allah_name_view.dart';
 import 'package:sound/app/modules/home/views/counter_view.dart';
 import 'package:sound/app/modules/home/views/sura_list_view.dart';
 
@@ -26,6 +27,11 @@ class AppPages {
     GetPage(
       name: _Paths.COUNTER,
       page: () => CounterView(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.ALLAHNAME,
+      page: () => AllahNameView(),
       binding: HomeBinding(),
     ),
   ];
