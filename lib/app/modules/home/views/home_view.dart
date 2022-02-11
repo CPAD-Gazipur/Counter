@@ -16,7 +16,9 @@ class HomeView extends GetView {
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xff007200),
+                  color: Color(
+                    0xff007200,
+                  ),
                 ),
               ),
               SizedBox(
@@ -39,13 +41,17 @@ class HomeView extends GetView {
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.all(30),
-                        primary: Color(0xff006400),
+                        primary: Color(
+                          0xff006400,
+                        ),
                         splashFactory: InkRipple.splashFactory,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
                         side: BorderSide(
-                          color: Color(0xff008000),
+                          color: Color(
+                            0xff008000,
+                          ),
                           width: 5,
                         ),
                       ),
@@ -62,13 +68,17 @@ class HomeView extends GetView {
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.all(30),
-                        primary: Color(0xff006400),
+                        primary: Color(
+                          0xff006400,
+                        ),
                         splashFactory: InkRipple.splashFactory,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
                         side: BorderSide(
-                          color: Color(0xff008000),
+                          color: Color(
+                            0xff008000,
+                          ),
                           width: 5,
                         ),
                       ),
@@ -83,13 +93,17 @@ class HomeView extends GetView {
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.all(30),
-                        primary: Color(0xff006400),
+                        primary: Color(
+                          0xff006400,
+                        ),
                         splashFactory: InkRipple.splashFactory,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
                         side: BorderSide(
-                          color: Color(0xff008000),
+                          color: Color(
+                            0xff008000,
+                          ),
                           width: 5,
                         ),
                       ),
@@ -104,13 +118,17 @@ class HomeView extends GetView {
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.all(30),
-                        primary: Color(0xff006400),
+                        primary: Color(
+                          0xff006400,
+                        ),
                         splashFactory: InkRipple.splashFactory,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
                         side: BorderSide(
-                          color: Color(0xff008000),
+                          color: Color(
+                            0xff008000,
+                          ),
                           width: 5,
                         ),
                       ),
@@ -125,13 +143,17 @@ class HomeView extends GetView {
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.all(30),
-                        primary: Color(0xff006400),
+                        primary: Color(
+                          0xff006400,
+                        ),
                         splashFactory: InkRipple.splashFactory,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
                         side: BorderSide(
-                          color: Color(0xff008000),
+                          color: Color(
+                            0xff008000,
+                          ),
                           width: 5,
                         ),
                       ),
@@ -146,13 +168,17 @@ class HomeView extends GetView {
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.all(30),
-                        primary: Color(0xff006400),
+                        primary: Color(
+                          0xff006400,
+                        ),
                         splashFactory: InkRipple.splashFactory,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
                         side: BorderSide(
-                          color: Color(0xff008000),
+                          color: Color(
+                            0xff008000,
+                          ),
                           width: 5,
                         ),
                       ),

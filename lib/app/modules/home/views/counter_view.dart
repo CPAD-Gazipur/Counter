@@ -19,7 +19,9 @@ class CounterView extends GetView<HomeController> {
                 style: TextStyle(
                   fontSize: 50,
                   fontWeight: FontWeight.normal,
-                  color: Color(0xff006400),
+                  color: Color(
+                    0xff006400,
+                  ),
                 ),
               ),
               SizedBox(
@@ -37,7 +39,9 @@ class CounterView extends GetView<HomeController> {
                   ),
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Color(0xFF006400),
+                      color: Color(
+                        0xFF006400,
+                      ),
                       width: 5,
                     ),
                     borderRadius: BorderRadius.circular(20),
@@ -51,7 +55,9 @@ class CounterView extends GetView<HomeController> {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.normal,
-                          color: Color(0xff004b23),
+                          color: Color(
+                            0xff004b23,
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -64,7 +70,9 @@ class CounterView extends GetView<HomeController> {
                                 .toString(),
                             style: TextStyle(
                               fontSize: 20,
-                              color: Color(0xFFff002b),
+                              color: Color(
+                                0xFFff002b,
+                              ),
                             ),
                           ),
                         ),
@@ -95,11 +103,17 @@ class CounterView extends GetView<HomeController> {
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 elevation: 20,
-                                shadowColor: Color(0xffff002b),
-                                primary: Color(0xffff002b),
+                                shadowColor: Color(
+                                  0xffff002b,
+                                ),
+                                primary: Color(
+                                  0xffff002b,
+                                ),
                                 padding: EdgeInsets.all(15),
                                 side: BorderSide(
-                                  color: Color(0xffff002b),
+                                  color: Color(
+                                    0xffff002b,
+                                  ),
                                   width: 5,
                                 ),
                               ),
@@ -118,11 +132,17 @@ class CounterView extends GetView<HomeController> {
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 elevation: 20,
-                                shadowColor: Color(0xFF007200),
-                                primary: Color(0xFF007200),
+                                shadowColor: Color(
+                                  0xFF007200,
+                                ),
+                                primary: Color(
+                                  0xFF007200,
+                                ),
                                 padding: EdgeInsets.all(10),
                                 side: BorderSide(
-                                  color: Color(0xFF007200),
+                                  color: Color(
+                                    0xFF007200,
+                                  ),
                                   width: 5,
                                 ),
                               ),
@@ -147,7 +167,9 @@ class CounterView extends GetView<HomeController> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: Color(0xff0a0908),
+                              color: Color(
+                                0xff0a0908,
+                              ),
                               width: 5,
                             ),
                           ),
@@ -180,11 +202,17 @@ class CounterView extends GetView<HomeController> {
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             elevation: 20,
-                            shadowColor: Color(0xFF008000),
-                            primary: Color(0xFF008000),
+                            shadowColor: Color(
+                              0xFF008000,
+                            ),
+                            primary: Color(
+                              0xFF008000,
+                            ),
                             padding: EdgeInsets.all(10),
                             side: BorderSide(
-                              color: Color(0xFF008000),
+                              color: Color(
+                                0xFF008000,
+                              ),
                               width: 5,
                             ),
                           ),
@@ -211,10 +239,14 @@ class CounterView extends GetView<HomeController> {
               //Dua List Button
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color(0xff6f4518),
+                  primary: Color(
+                    0xff6f4518,
+                  ),
                   padding: EdgeInsets.all(15),
                   side: BorderSide(
-                    color: Colors.black,
+                    color: Color(
+                      0xff000000,
+                    ),
                     width: 5,
                   ),
                 ),

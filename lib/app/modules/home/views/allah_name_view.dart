@@ -7,7 +7,9 @@ class AllahNameView extends GetView {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: Color(
+        0xffffffff,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(50.0),
         child: SingleChildScrollView(
@@ -20,7 +22,9 @@ class AllahNameView extends GetView {
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xff007200),
+                    color: Color(
+                      0xff007200,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -30,19 +34,37 @@ class AllahNameView extends GetView {
                   spacing: 50,
                   runSpacing: 20,
                   children: [
-                    for (int i = 0; i < 98; i++)
+                    //Used for loop for container
+                    for (int i = 0; i <= 98; i++)
                       Container(
-                        height: 30,
-                        width: 100,
-                        child: Center(
-                          child: Text(
-                            "(${i + 1}) ${HomeController.allahnames[i % 99]}",
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xffffffffff),
+                        padding: EdgeInsets.all(15),
+                        width: double.infinity,
+                        child: Column(
+                          children: [
+                            Center(
+                              child: Text(
+                                "(${i + 1})",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xffffffffff),
+                                ),
+                              ),
                             ),
-                          ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Center(
+                              child: Text(
+                                "${HomeController.allahnames[i % 99]}",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xffffffffff),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                         decoration: BoxDecoration(
                           color: Color(

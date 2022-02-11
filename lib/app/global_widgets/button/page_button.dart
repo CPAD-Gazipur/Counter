@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
   final String text;
-  final Function() onPressed;
+  final Function onclick;
   const Button({
     Key? key,
     this.text = "",
-    required this.onPressed,
+    required this.onclick,
   }) : super(key: key);
 
   @override
@@ -14,18 +14,22 @@ class Button extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         padding: EdgeInsets.all(30),
-        primary: Color(0xff006400),
+        primary: Color(
+          0xff006400,
+        ),
         splashFactory: InkRipple.splashFactory,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
         side: BorderSide(
-          color: Color(0xff008000),
+          color: Color(
+            0xff008000,
+          ),
           width: 5,
         ),
       ),
       onPressed: () {
-        onPressed;
+        onclick;
       },
       child: Text(
         text,

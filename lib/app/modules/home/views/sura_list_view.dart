@@ -49,7 +49,9 @@ class SuraListView extends GetView<HomeController> {
                               Text(
                                 'Dua ${i + 1}',
                                 style: TextStyle(
-                                  color: Colors.black,
+                                  color: Color(
+                                    0xff000000,
+                                  ),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 15,
                                 ),
@@ -60,7 +62,9 @@ class SuraListView extends GetView<HomeController> {
                               Text(
                                 HomeController.duaList[i % 20],
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Color(
+                                    0xffffffff,
+                                  ),
                                   // fontSize: 15,
                                 ),
                               ),
@@ -74,12 +78,18 @@ class SuraListView extends GetView<HomeController> {
                           startAngle: 2,
                           endAngle: 5,
                           colors: const <Color>[
-                            Color(0xff38b000),
-                            Color(0xff006400),
+                            Color(
+                              0xff38b000,
+                            ),
+                            Color(
+                              0xff006400,
+                            ),
                           ],
                           stops: const <double>[0.0, 0.5],
                         ),
-                        color: Colors.white,
+                        color: Color(
+                          0xffffffff,
+                        ),
                         border: Border.all(
                           color: HomeController.colors[i % 13],
                           width: 5,
