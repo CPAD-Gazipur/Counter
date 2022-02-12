@@ -6,21 +6,41 @@ class HomeView extends GetView {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffffffff),
+      appBar: AppBar(
+        titleSpacing: 0.0,
+        elevation: 5.0,
+        backgroundColor: Color(0xffffffff),
+        shadowColor: Color(0xffffffff),
+        title: Text(
+          "ISLAMIC APP",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+            color: Color(
+              0xff007200,
+            ),
+          ),
+        ),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.portrait,
+              color: Color(0xff007200),
+              size: 30.0,
+            ),
+            onPressed: () {
+              Get.toNamed(Routes.ABOUT);
+            },
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text(
-                "ISLAMIC APP",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Color(
-                    0xff007200,
-                  ),
-                ),
-              ),
               SizedBox(
                 height: 45,
               ),
@@ -34,7 +54,7 @@ class HomeView extends GetView {
                         Get.toNamed(Routes.COUNTER);
                       },
                       child: Text(
-                        "Electric Tozbi",
+                        "তযবি করুন",
                         style: TextStyle(
                           fontSize: 15,
                         ),
@@ -61,9 +81,9 @@ class HomeView extends GetView {
                         Get.toNamed(Routes.ALLAHNAME);
                       },
                       child: Text(
-                        "Allah's 99 names",
+                        "আল্লাহ্‌র ৯৯ নাম",
                         style: TextStyle(
-                          fontSize: 11.5,
+                          fontSize: 15.5,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -84,11 +104,13 @@ class HomeView extends GetView {
                       ),
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(Routes.NAMAJDUA);
+                      },
                       child: Text(
-                        "Page 3",
+                        "নামাজের দোয়া",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 14,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -109,11 +131,13 @@ class HomeView extends GetView {
                       ),
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(Routes.NAMAJSURA);
+                      },
                       child: Text(
-                        " Page 4",
+                        "নামাজের সূরা",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 15,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -133,56 +157,56 @@ class HomeView extends GetView {
                         ),
                       ),
                     ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        " Page 5",
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.all(30),
-                        primary: Color(
-                          0xff006400,
-                        ),
-                        splashFactory: InkRipple.splashFactory,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        side: BorderSide(
-                          color: Color(
-                            0xff008000,
-                          ),
-                          width: 5,
-                        ),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        " Page 6",
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.all(30),
-                        primary: Color(
-                          0xff006400,
-                        ),
-                        splashFactory: InkRipple.splashFactory,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        side: BorderSide(
-                          color: Color(
-                            0xff008000,
-                          ),
-                          width: 5,
-                        ),
-                      ),
-                    ),
+                    // ElevatedButton(
+                    //   onPressed: () {},
+                    //   child: Text(
+                    //     " Page 5",
+                    //     style: TextStyle(
+                    //       fontSize: 20,
+                    //     ),
+                    //   ),
+                    //   style: ElevatedButton.styleFrom(
+                    //     padding: EdgeInsets.all(30),
+                    //     primary: Color(
+                    //       0xff006400,
+                    //     ),
+                    //     splashFactory: InkRipple.splashFactory,
+                    //     shape: RoundedRectangleBorder(
+                    //       borderRadius: BorderRadius.circular(20),
+                    //     ),
+                    //     side: BorderSide(
+                    //       color: Color(
+                    //         0xff008000,
+                    //       ),
+                    //       width: 5,
+                    //     ),
+                    //   ),
+                    // ),
+                    // ElevatedButton(
+                    //   onPressed: () {},
+                    //   child: Text(
+                    //     " Page 6",
+                    //     style: TextStyle(
+                    //       fontSize: 20,
+                    //     ),
+                    //   ),
+                    //   style: ElevatedButton.styleFrom(
+                    //     padding: EdgeInsets.all(30),
+                    //     primary: Color(
+                    //       0xff006400,
+                    //     ),
+                    //     splashFactory: InkRipple.splashFactory,
+                    //     shape: RoundedRectangleBorder(
+                    //       borderRadius: BorderRadius.circular(20),
+                    //     ),
+                    //     side: BorderSide(
+                    //       color: Color(
+                    //         0xff008000,
+                    //       ),
+                    //       width: 5,
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

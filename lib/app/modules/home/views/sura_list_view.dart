@@ -22,15 +22,7 @@ class SuraListView extends GetView<HomeController> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            //
-            //
-            //
-            //
             for (int i = 0; i <= 19; i++)
-              //
-              //
-              //
-              //
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: GestureDetector(

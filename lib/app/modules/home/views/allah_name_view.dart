@@ -15,10 +15,9 @@ class AllahNameView extends GetView {
         child: SingleChildScrollView(
           child: Center(
             child: Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Allah's 99 names",
+                  "আল্লাহ্‌র ৯৯ টি নাম ও অর্থ",
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
