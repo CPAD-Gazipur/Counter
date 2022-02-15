@@ -65,7 +65,7 @@ class AboutView extends GetView<AboutController> {
                 Text(
                   "Yeaseen Ahmed",
                   style: TextStyle(
-                    fontSize: 50,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Color(0xff007200),
                   ),
