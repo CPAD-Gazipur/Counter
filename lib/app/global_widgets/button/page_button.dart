@@ -11,24 +11,26 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.all(30),
-        primary: Color(
-          0xff006400,
-        ),
-        splashFactory: InkRipple.splashFactory,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        side: BorderSide(
-          color: Color(
-            0xff008000,
-          ),
-          width: 5,
-        ),
-      ),
-      onPressed: () {
+    return InkWell(
+      customBorder: Border(),
+      borderRadius: BorderRadius.circular(45),
+      // style: ElevatedButton.styleFrom(
+      //   padding: EdgeInsets.all(30),
+      //   primary: Color(
+      //     0xff006400,
+      //   ),
+      //   splashFactory: InkRipple.splashFactory,
+      //   shape: RoundedRectangleBorder(
+      //     borderRadius: BorderRadius.circular(20),
+      //   ),
+      //   side: BorderSide(
+      //     color: Color(
+      //       0xff008000,
+      //     ),
+      //     width: 5,
+      //   ),
+      // ),
+      onTap: () {
         onclick;
       },
       child: Text(
