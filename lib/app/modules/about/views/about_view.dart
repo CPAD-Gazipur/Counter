@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 import 'package:user_profile_avatar/user_profile_avatar.dart';
-
 import '../controllers/about_controller.dart';
 
 class AboutView extends GetView<AboutController> {

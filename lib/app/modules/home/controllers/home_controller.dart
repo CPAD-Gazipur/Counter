@@ -3,20 +3,11 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   final count = 0.obs;
-
   final suras = [].obs;
   final selected = 0.obs;
   @override
   void onInit() {
-    //
-    //
-    //
-    //
     super.onInit();
-    //
-    //
-    //
-    //
     print(onInit);
     suras.value = duaList;
   }

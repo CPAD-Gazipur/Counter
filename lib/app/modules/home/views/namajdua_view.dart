@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:sound/app/modules/home/controllers/home_controller.dart';
 
