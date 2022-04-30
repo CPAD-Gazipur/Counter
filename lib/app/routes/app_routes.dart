@@ -10,6 +10,8 @@ abstract class Routes {
   static const NAMAJDUA = _Paths.NAMAJDUA;
   static const NAMAJSURA = _Paths.NAMAJSURA;
   static const ABOUT = _Paths.ABOUT;
+  static const LOGIN = _Paths.LOGIN;
+  static const REGISTER = _Paths.REGISTER;
 }
 
 abstract class _Paths {
@@ -21,4 +23,6 @@ abstract class _Paths {
   static const NAMAJDUA = '/namajdua';
   static const NAMAJSURA = '/namajsura';
   static const ABOUT = '/about';
+  static const LOGIN = '/login';
+  static const REGISTER = '/register';
 }

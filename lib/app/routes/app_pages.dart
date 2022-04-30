@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:sound/app/modules/home/views/login_view.dart';
+import 'package:sound/app/modules/home/views/register_view.dart';
 
 import '../modules/about/bindings/about_binding.dart';
 import '../modules/about/views/about_view.dart';
@@ -15,7 +17,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.LOGIN;
 
   static final routes = [
     GetPage(
@@ -50,6 +52,16 @@ class AppPages {
       name: _Paths.ABOUT,
       page: () => AboutView(),
       binding: AboutBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOGIN,
+      page: () => LoginView(),
+      // binding: AboutBinding(),
+    ),
+    GetPage(
+      name: _Paths.REGISTER,
+      page: () => RegisterView(),
+      // binding: AboutBinding(),
     ),
   ];
 }

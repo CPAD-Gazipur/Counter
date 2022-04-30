@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "571787890194",
+    "project_id": "tozbi-counter",
+    "storage_bucket": "tozbi-counter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571787890194:android:150273fe82728b6450d2cb",
+        "android_client_info": {
+          "package_name": "com.example.sound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571787890194-jdas96i8clvs9a3899em58d9oa08mvdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sound",
+            "certificate_hash": "8d3d4ea93b7c64b5c48d84a44892dd0be6d95439"
+          }
+        },
+        {
+          "client_id": "571787890194-7qfbgaq43f7t1unec4k63ovjre4k1nog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHYzn3-9XpXLlHR3k9x_RLJ-YOnPXFb4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571787890194-7qfbgaq43f7t1unec4k63ovjre4k1nog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
