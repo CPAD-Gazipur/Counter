@@ -8,6 +8,7 @@ import '../../../routes/app_pages.dart';
 class RegisterView extends GetView {
   String email = "";
   String pass = "";
+  var _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -145,6 +146,11 @@ class RegisterView extends GetView {
                                     email: email,
                                     password: pass,
                                   );
+                                  var newUserCredential =
+                                      await _auth.signInWithEmailAndPassword(
+                                          email: email, password: pass);
+                                  newUserCredential.user
+                                      ?.sendEmailVerification();
                                   Navigator.pushNamed(context, Routes.LOGIN);
                                 } on FirebaseAuthException catch (e) {
                                   if (e.code == 'weak-password') {
